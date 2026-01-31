@@ -1,0 +1,38 @@
+# ================================
+# Core (required for all setups)
+# ================================
+numpy>=1.24.0
+opencv-python>=4.8.0
+
+# ================================
+# YOLOv8 Pose (Desktop / GPU / CPU)
+# ================================
+ultralytics>=8.0.0
+
+# Optional: GPU support for YOLO
+torch>=2.0.0
+torchvision>=0.15.0
+
+# ================================
+# MoveNet (TFLite, Mobile-aligned)
+# ================================
+tensorflow>=2.13.0
+
+# NOTE:
+# MoveNet requires an external .tflite model file
+# (movenet_thunder.tflite or movenet_lightning.tflite)
+
+# ================================
+# MediaPipe (USE IN SEPARATE ENV)
+# ================================
+mediapipe==0.10.9
+# protobuf==3.20.3
+
+# MediaPipe is commented out by default because:
+# - It conflicts with TensorFlow (MoveNet) on Windows
+# - Must be installed in a separate virtual environment
+
+# ================================
+# Optional (visualization extras)
+# ================================
+opencv-contrib-python>=4.8.0
